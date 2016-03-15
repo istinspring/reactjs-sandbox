@@ -10,8 +10,12 @@ module.exports = {
       path.resolve(__dirname, 'app/client.jsx')
     ],
     vendor: [
+      'flexboxgrid', 'material-ui', 'react-tap-event-plugin',
       'react', 'react-dom', 'redux', 'immutable',
-      'react-redux', 'react-router', 'react-router-redux'
+      'react-redux', 'react-router', 'react-router-redux',
+      'redux-devtools', 'redux-devtools-dock-monitor',
+      'redux-devtools-log-monitor',
+      'react-helmet',
     ]
   },
   output: {
