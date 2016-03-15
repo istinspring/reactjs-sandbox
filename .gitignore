@@ -1,0 +1,6 @@
+# ide and editor
+.tern-port
+reactjssandbox.yaml
+
+# node and js
+node_modules/
