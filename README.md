@@ -33,11 +33,6 @@ npm run dev    # launch webpack devserver with hot reloading
 
 DevTools are available and could be activated by `ctrl-h` in your browser.
 
-```
-npm install -g webpack
-npm install -g webpack-dev-server
-```
-
 ## Workflow
 
 Make a new branch:

@@ -3,12 +3,12 @@ import {
   createStore as _createStore,
   applyMiddleware, compose
 } from 'redux';
-import { syncHistoryWithStore } from 'react-router-redux';
+import { routerMiddleware } from 'react-router-redux';
 import config from '../config';
 
 export default function createStore(history, data) {
   // Sync dispatched route actions to the history
-  const reduxRouterMiddleware = syncHistoryWithStore(history);
+  const reduxRouterMiddleware = routerMiddleware(history);
   const middleware = [
     reduxRouterMiddleware
   ];
@@ -30,8 +30,6 @@ export default function createStore(history, data) {
 
   const reducer = require('./reducer').default;
   const store = finalCreateStore(reducer, data);
-
-  reduxRouterMiddleware.listenForReplays(store);
 
   // hot replacement for reducers
   // without this you'll need to restart webpack-dev-server
