@@ -37,3 +37,11 @@ DevTools are available and could be activated by `ctrl-h` in your browser.
 npm install -g webpack
 npm install -g webpack-dev-server
 ```
+
+## Workflow
+
+Make a new branch:
+
+```git checkout -b feature/nice-spinner``` implement a component. Stay cool.
+
+Or just for it, commit and make pull request.
