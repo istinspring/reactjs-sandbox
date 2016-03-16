@@ -2,7 +2,7 @@
 
 ReactJS sandbox. Basic front-end project template.
 
-[screenshot](http://i.imgur.com/wibSkaC.png)
+![screenshot](http://i.imgur.com/wibSkaC.png
 
 ## Install
 
