@@ -15,7 +15,7 @@ module.exports = {
       'react-redux', 'react-router', 'react-router-redux',
       'redux-devtools', 'redux-devtools-dock-monitor',
       'redux-devtools-log-monitor',
-      'react-helmet',
+      'react-helmet', 'react-css-modules', 'react-flexbox-grid'
     ]
   },
   output: {
@@ -43,11 +43,18 @@ module.exports = {
       },
       {
         test: /\.css$/,
-        loader: 'style-loader!css-loader?modules&importLoaders=1'
+        loader: 'style-loader!css-loader?modules&importLoaders=1',
+        include: /flexboxgrid/
+      },
+      {
+        test: /\.scss$/,
+        loaders: [
+          'style', 'css?sourceMap&modules&importLoaders=1', 'sass?sourceMap'
+        ]
       }
     ]
   },
   resolve: {
-    extensions: ['', '.js', '.jsx']
+    extensions: ['', '.js', '.jsx', '.css']
   }
 };

@@ -1,13 +1,15 @@
 import React from 'react';
+import CSSModules from 'react-css-modules';
+import styles from './styles.scss';
 
 class Footer extends React.Component {
   render() {
     return (
-      <footer className="footer">
+      <footer styleName="footer">
         <strong>Enterprise moto</strong> &copy; Copyright 2016
       </footer>
     );
   }
 }
 
-export default Footer;
+export default CSSModules(Footer, styles);
